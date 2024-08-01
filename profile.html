@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: black;
+            color: #FF006E;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #FF006E;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background-color: #212121;
+            border-color: #FF006E;
+            color: #FF006E;
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            background-color: #FF006E;
+            color: #FCFF38;
+        }
+
+        .card-body {
+            color: #FCFF38;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome, {{ username }}</h1>
+        <div class="card">
+            <div class="card-header">
+                Finance Expense Management Tool
+            </div>
+            <div class="card-body">
+                <p>This tool helps you manage your finances by tracking your expenses and income.</p>
+                <a href="#" class="btn btn-primary">Go to Tool</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                Personalized Budgeting Plans
+            </div>
+            <div class="card-body">
+                <p>Get personalized budgeting plans based on your income, expenses, and financial goals.</p>
+                <a href="#" class="btn btn-primary">View Plans</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                Financial Educational Resources
+            </div>
+            <div class="card-body">
+                <p>Access a variety of financial educational resources to improve your financial literacy.</p>
+                <a href="#" class="btn btn-primary">Explore Resources</a>
+            </div>
+        </div>
+        <h1>User Profile</h1>
+        <p><strong>Name:</strong> {{ user.name }}</p>
+        <p><strong>Age:</strong> {{ user.age }}</p>
+        <p><strong>Gender:</strong> {{ user.gender }}</p>
+        <p><strong>Username:</strong> {{ user.username }}</p>
+        <p><strong>User ID:</strong> {{ user.user_id }}</p>
+        <p><strong>Phone:</strong> {{ user.phone }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+    </div>
+</body>
+
+</html>

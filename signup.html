@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+    body {
+        background-color: black;
+    }
+
+    form {
+        background-color: black;
+        color: #FCFF38;
+        padding: 100px;
+        border: 2px solid #FF006E;
+        border-radius: 5px;
+        margin: 20px auto;
+        max-width: 400px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #FF006E;
+        border-radius: 3px;
+    }
+
+    input[type="submit"] {
+        background-color: #FCFF38;
+        color: #FF006E;
+        border: 1px solid #FF006E;
+        padding: 10px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #FF006E;
+        color: #FCFF38;
+    }
+</style>
+</head>
+<body>
+<h1>Sign Up</h1>
+<form action="/signup" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="age">Age:</label>
+    <input type="text" id="age" name="age"><br><br>
+    <label for="gender">Gender:</label>
+    <input type="text" id="gender" name="gender"><br><br>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+    <label for="user_id">User ID (Aadhar Card Number):</label>
+    <input type="text" id="user_id" name="user_id"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone"><br><br>
+    <label for="email">Email (optional):</label>
+    <input type="text" id="email" name="email"><br><br>
+    <input type="submit" value="Sign Up">
+</form>
+</body>
+</html>
